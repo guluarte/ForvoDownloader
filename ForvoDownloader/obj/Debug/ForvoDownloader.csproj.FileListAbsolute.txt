@@ -1,0 +1,9 @@
+c:\users\rodolfo\documents\visual studio 2013\Projects\ForvoDownloader\ForvoDownloader\bin\Debug\ForvoDownloader.exe.config
+c:\users\rodolfo\documents\visual studio 2013\Projects\ForvoDownloader\ForvoDownloader\bin\Debug\ForvoDownloader.exe
+c:\users\rodolfo\documents\visual studio 2013\Projects\ForvoDownloader\ForvoDownloader\bin\Debug\ForvoDownloader.pdb
+c:\users\rodolfo\documents\visual studio 2013\Projects\ForvoDownloader\ForvoDownloader\obj\Debug\ForvoDownloader.csprojResolveAssemblyReference.cache
+c:\users\rodolfo\documents\visual studio 2013\Projects\ForvoDownloader\ForvoDownloader\obj\Debug\ForvoDownloader.Properties.Resources.resources
+c:\users\rodolfo\documents\visual studio 2013\Projects\ForvoDownloader\ForvoDownloader\obj\Debug\ForvoDownloader.csproj.GenerateResource.Cache
+c:\users\rodolfo\documents\visual studio 2013\Projects\ForvoDownloader\ForvoDownloader\obj\Debug\ForvoDownloader.exe
+c:\users\rodolfo\documents\visual studio 2013\Projects\ForvoDownloader\ForvoDownloader\obj\Debug\ForvoDownloader.pdb
+C:\Users\rodolfo\documents\visual studio 2013\Projects\ForvoDownloader\ForvoDownloader\obj\Debug\ForvoDownloader.MainWindow.resources
