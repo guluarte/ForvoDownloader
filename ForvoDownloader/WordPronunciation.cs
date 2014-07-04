@@ -51,6 +51,11 @@ namespace ForvoDownloader
         private int numVotes;
         private int numPositiveVotes;
 
+        public int NumPositiveVotes
+        {
+            get { return numPositiveVotes; }
+        }
+
 
         public WordPronunciation(int id, string word, string addtime, int hits, string username, string sex, string country,
             string code, string langname, string pathmp3,
@@ -73,12 +78,13 @@ namespace ForvoDownloader
             addTime = DateTime.ParseExact(addtime, "yyyy-MM-dd HH:mm:ss", CultureInfo.InvariantCulture);
         }
 
-        public WordPronunciation(int id, string word, int hits, string pathmp3)
+        public WordPronunciation(int id, string word, int hits, string pathmp3, int numPositiveVotes)
         {
             this.id = id;
             this.word = word;
             this.hits = hits;
             this.pathmp3 = pathmp3;
+            this.numPositiveVotes = numPositiveVotes;
         }
 
         public override string ToString()

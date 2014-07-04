@@ -18,6 +18,22 @@ namespace ForvoDownloader
 
         private string lang = "en";
 
+        private int numRequest = 0;
+
+        public int NumRequest
+        {
+            get { return numRequest; }
+        }
+
+        private int requestLeft = 0;
+
+        public int RequestLeft
+        {
+            get { return requestLeft; }
+        
+        }
+
+
         public String Language
         {
             get { return lang; }
@@ -93,11 +109,26 @@ namespace ForvoDownloader
 
             foreach (var items in jsonResult["items"])
             {
-                WordPronunciation addWordPronunciation = new WordPronunciation(id: (int)items["id"], word: items["word"], hits: (int)items["hits"], pathmp3: items["pathmp3"]);
+                WordPronunciation addWordPronunciation = new WordPronunciation(id: (int)items["id"], word: items["word"], hits: (int)items["hits"], pathmp3: items["pathmp3"], numPositiveVotes: (int)items["num_positive_votes"]);
                 wordPronunciations.Add(addWordPronunciation);
             }
             return wordPronunciations;
-        } 
+        }
+
+        public WordPronunciation GetBestPronunciation(string word)
+        {
+
+            string encodedWord = Uri.EscapeUriString(word);
+            string uri = ApiUrl + "/key/"+Apikey+"/format/json/action/standard-pronunciation/word/"+word;
+            dynamic jsonResult = DynamicJson.Parse(webClient.DownloadString(uri));
+
+            var items = jsonResult["items"][0];
+
+            WordPronunciation wordPronunciation = new WordPronunciation(id: (int)items["id"], word: items["word"], hits: (int)items["hits"], pathmp3: items["pathmp3"], numPositiveVotes: (int)items["num_positive_votes"]);
+               
+
+            return wordPronunciation;            
+        }
     }
 
 }

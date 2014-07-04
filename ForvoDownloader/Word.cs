@@ -29,7 +29,7 @@ namespace ForvoDownloader
 
         public WordPronunciation GetBestPronunciation()
         {
-            WordPronunciation pronunciation = pronunciations.OrderBy(o => o.Hits).FirstOrDefault();
+            WordPronunciation pronunciation = pronunciations.OrderByDescending(o => o.NumPositiveVotes).FirstOrDefault();
             return pronunciation;
         }
 

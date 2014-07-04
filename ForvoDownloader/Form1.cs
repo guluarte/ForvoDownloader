@@ -79,12 +79,12 @@ namespace ForvoDownloader
                     var word = new Word(wordTxt.ToLower());
                     try
                     {
-                        word.Pronunciations = forvo.GetListWordPronunciations(word);
-                        WordPronunciation pronunciation = word.GetBestPronunciation();
-                        if (pronunciation != null)
+                        WordPronunciation wordPronunciation = forvo.GetBestPronunciation(word.ToString());
+
+                        if (wordPronunciation != null)
                         {
                             string filename = Path.Combine(textBoxOutputDir.Text, word + ".mp3");
-                            webClient.DownloadFile(pronunciation.PathMp3, filename);
+                            webClient.DownloadFile(wordPronunciation.PathMp3, filename);
                             writer.WriteLine(word + "\t" + word + ".mp3");
                         }
                         else
@@ -92,7 +92,7 @@ namespace ForvoDownloader
                             errorWriter.WriteLine("Couldn't download the word:" + word);
                         }
                     }
-                    catch (Exception ex)
+                    catch (ArgumentException ex)
                     {
                         //log the error
                         errorWriter.WriteLine("Couldn't download the word:" + word);
