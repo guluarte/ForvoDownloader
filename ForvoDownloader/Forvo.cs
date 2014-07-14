@@ -5,6 +5,7 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using Codeplex.Data;
+using Microsoft.CSharp.RuntimeBinder;
 
 
 namespace ForvoDownloader
@@ -115,12 +116,13 @@ namespace ForvoDownloader
             return wordPronunciations;
         }
 
-        public WordPronunciation GetBestPronunciation(string word)
+         public WordPronunciation GetBestPronunciation(string word)
         {
 
             string encodedWord = Uri.EscapeUriString(word);
             string uri = ApiUrl + "/key/"+Apikey+"/format/json/action/standard-pronunciation/word/"+word;
             dynamic jsonResult = DynamicJson.Parse(webClient.DownloadString(uri));
+
 
             var items = jsonResult["items"][0];
 

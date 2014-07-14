@@ -1,6 +1,6 @@
 ﻿namespace ForvoDownloader
 {
-    partial class MainWindow
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -42,21 +42,22 @@
             this.label5 = new System.Windows.Forms.Label();
             this.labelNumWords = new System.Windows.Forms.Label();
             this.folderBrowserDialog = new System.Windows.Forms.FolderBrowserDialog();
+            this.progressBar = new System.Windows.Forms.ProgressBar();
             this.SuspendLayout();
             // 
             // buttonDownload
             // 
-            this.buttonDownload.Location = new System.Drawing.Point(345, 371);
+            this.buttonDownload.Location = new System.Drawing.Point(287, 346);
             this.buttonDownload.Name = "buttonDownload";
-            this.buttonDownload.Size = new System.Drawing.Size(75, 23);
+            this.buttonDownload.Size = new System.Drawing.Size(114, 23);
             this.buttonDownload.TabIndex = 0;
             this.buttonDownload.Text = "Download";
             this.buttonDownload.UseVisualStyleBackColor = true;
-            this.buttonDownload.Click += new System.EventHandler(this.button1_Click);
+            this.buttonDownload.Click += new System.EventHandler(this.buttonDownload_Click);
             // 
             // textBoxApiKey
             // 
-            this.textBoxApiKey.Location = new System.Drawing.Point(26, 36);
+            this.textBoxApiKey.Location = new System.Drawing.Point(12, 25);
             this.textBoxApiKey.MaxLength = 32;
             this.textBoxApiKey.Name = "textBoxApiKey";
             this.textBoxApiKey.Size = new System.Drawing.Size(389, 20);
@@ -65,7 +66,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(26, 17);
+            this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(41, 13);
             this.label1.TabIndex = 2;
@@ -73,7 +74,7 @@
             // 
             // textBoxWords
             // 
-            this.textBoxWords.Location = new System.Drawing.Point(26, 167);
+            this.textBoxWords.Location = new System.Drawing.Point(12, 143);
             this.textBoxWords.Multiline = true;
             this.textBoxWords.Name = "textBoxWords";
             this.textBoxWords.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -84,7 +85,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(26, 142);
+            this.label2.Location = new System.Drawing.Point(12, 127);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(41, 13);
             this.label2.TabIndex = 4;
@@ -93,7 +94,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(26, 59);
+            this.label3.Location = new System.Drawing.Point(12, 48);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(56, 13);
             this.label3.TabIndex = 5;
@@ -101,14 +102,14 @@
             // 
             // textBoxOutputDir
             // 
-            this.textBoxOutputDir.Location = new System.Drawing.Point(26, 79);
+            this.textBoxOutputDir.Location = new System.Drawing.Point(12, 64);
             this.textBoxOutputDir.Name = "textBoxOutputDir";
             this.textBoxOutputDir.Size = new System.Drawing.Size(309, 20);
             this.textBoxOutputDir.TabIndex = 6;
             // 
             // buttonBrowse
             // 
-            this.buttonBrowse.Location = new System.Drawing.Point(345, 76);
+            this.buttonBrowse.Location = new System.Drawing.Point(326, 64);
             this.buttonBrowse.Name = "buttonBrowse";
             this.buttonBrowse.Size = new System.Drawing.Size(75, 23);
             this.buttonBrowse.TabIndex = 7;
@@ -119,7 +120,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(26, 102);
+            this.label4.Location = new System.Drawing.Point(12, 87);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(58, 13);
             this.label4.TabIndex = 8;
@@ -129,14 +130,14 @@
             // 
             this.comboBoxLanguageList.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxLanguageList.FormattingEnabled = true;
-            this.comboBoxLanguageList.Location = new System.Drawing.Point(26, 118);
+            this.comboBoxLanguageList.Location = new System.Drawing.Point(12, 103);
             this.comboBoxLanguageList.Name = "comboBoxLanguageList";
             this.comboBoxLanguageList.Size = new System.Drawing.Size(121, 21);
             this.comboBoxLanguageList.TabIndex = 9;
             // 
             // buttonLoadLanguageList
             // 
-            this.buttonLoadLanguageList.Location = new System.Drawing.Point(154, 115);
+            this.buttonLoadLanguageList.Location = new System.Drawing.Point(139, 103);
             this.buttonLoadLanguageList.Name = "buttonLoadLanguageList";
             this.buttonLoadLanguageList.Size = new System.Drawing.Size(115, 23);
             this.buttonLoadLanguageList.TabIndex = 11;
@@ -147,7 +148,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(26, 356);
+            this.label5.Location = new System.Drawing.Point(12, 328);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(66, 13);
             this.label5.TabIndex = 12;
@@ -156,17 +157,26 @@
             // labelNumWords
             // 
             this.labelNumWords.AutoSize = true;
-            this.labelNumWords.Location = new System.Drawing.Point(99, 356);
+            this.labelNumWords.Location = new System.Drawing.Point(84, 328);
             this.labelNumWords.Name = "labelNumWords";
             this.labelNumWords.Size = new System.Drawing.Size(13, 13);
             this.labelNumWords.TabIndex = 13;
             this.labelNumWords.Text = "0";
             // 
-            // MainWindow
+            // progressBar
+            // 
+            this.progressBar.Location = new System.Drawing.Point(15, 344);
+            this.progressBar.Name = "progressBar";
+            this.progressBar.Size = new System.Drawing.Size(266, 25);
+            this.progressBar.TabIndex = 14;
+            this.progressBar.Visible = false;
+            // 
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(427, 405);
+            this.ClientSize = new System.Drawing.Size(417, 386);
+            this.Controls.Add(this.progressBar);
             this.Controls.Add(this.labelNumWords);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.buttonLoadLanguageList);
@@ -181,7 +191,7 @@
             this.Controls.Add(this.textBoxApiKey);
             this.Controls.Add(this.buttonDownload);
             this.MaximizeBox = false;
-            this.Name = "MainWindow";
+            this.Name = "MainForm";
             this.Text = "ForvoDownloader";
             this.Load += new System.EventHandler(this.MainWindow_Load);
             this.ResumeLayout(false);
@@ -205,6 +215,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label labelNumWords;
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog;
+        private System.Windows.Forms.ProgressBar progressBar;
     }
 }
 

@@ -6,4 +6,4 @@ c:\users\rodolfo\documents\visual studio 2013\Projects\ForvoDownloader\ForvoDown
 c:\users\rodolfo\documents\visual studio 2013\Projects\ForvoDownloader\ForvoDownloader\obj\Debug\ForvoDownloader.csproj.GenerateResource.Cache
 c:\users\rodolfo\documents\visual studio 2013\Projects\ForvoDownloader\ForvoDownloader\obj\Debug\ForvoDownloader.exe
 c:\users\rodolfo\documents\visual studio 2013\Projects\ForvoDownloader\ForvoDownloader\obj\Debug\ForvoDownloader.pdb
-C:\Users\rodolfo\documents\visual studio 2013\Projects\ForvoDownloader\ForvoDownloader\obj\Debug\ForvoDownloader.MainWindow.resources
+C:\Users\rodolfo\documents\visual studio 2013\Projects\ForvoDownloader\ForvoDownloader\obj\Debug\ForvoDownloader.MainForm.resources
