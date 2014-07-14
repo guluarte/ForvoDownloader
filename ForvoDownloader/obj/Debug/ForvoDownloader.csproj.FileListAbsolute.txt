@@ -7,3 +7,7 @@ c:\users\rodolfo\documents\visual studio 2013\Projects\ForvoDownloader\ForvoDown
 c:\users\rodolfo\documents\visual studio 2013\Projects\ForvoDownloader\ForvoDownloader\obj\Debug\ForvoDownloader.exe
 c:\users\rodolfo\documents\visual studio 2013\Projects\ForvoDownloader\ForvoDownloader\obj\Debug\ForvoDownloader.pdb
 C:\Users\rodolfo\documents\visual studio 2013\Projects\ForvoDownloader\ForvoDownloader\obj\Debug\ForvoDownloader.MainForm.resources
+C:\Users\rodolfo\documents\visual studio 2013\Projects\ForvoDownloader\ForvoDownloader\bin\Debug\ForvoDownloader.exe.manifest
+C:\Users\rodolfo\documents\visual studio 2013\Projects\ForvoDownloader\ForvoDownloader\bin\Debug\ForvoDownloader.application
+C:\Users\rodolfo\documents\visual studio 2013\Projects\ForvoDownloader\ForvoDownloader\obj\Debug\ForvoDownloader.exe.manifest
+C:\Users\rodolfo\documents\visual studio 2013\Projects\ForvoDownloader\ForvoDownloader\obj\Debug\ForvoDownloader.application
