@@ -1,0 +1,12 @@
+C:\Users\rodolfo\documents\visual studio 2013\Projects\ForvoDownloader\ForvoDownloader\bin\Release\ForvoDownloader.exe.config
+C:\Users\rodolfo\documents\visual studio 2013\Projects\ForvoDownloader\ForvoDownloader\bin\Release\ForvoDownloader.exe.manifest
+C:\Users\rodolfo\documents\visual studio 2013\Projects\ForvoDownloader\ForvoDownloader\bin\Release\ForvoDownloader.application
+C:\Users\rodolfo\documents\visual studio 2013\Projects\ForvoDownloader\ForvoDownloader\bin\Release\ForvoDownloader.exe
+C:\Users\rodolfo\documents\visual studio 2013\Projects\ForvoDownloader\ForvoDownloader\bin\Release\ForvoDownloader.pdb
+C:\Users\rodolfo\documents\visual studio 2013\Projects\ForvoDownloader\ForvoDownloader\obj\Release\ForvoDownloader.MainForm.resources
+C:\Users\rodolfo\documents\visual studio 2013\Projects\ForvoDownloader\ForvoDownloader\obj\Release\ForvoDownloader.Properties.Resources.resources
+C:\Users\rodolfo\documents\visual studio 2013\Projects\ForvoDownloader\ForvoDownloader\obj\Release\ForvoDownloader.csproj.GenerateResource.Cache
+C:\Users\rodolfo\documents\visual studio 2013\Projects\ForvoDownloader\ForvoDownloader\obj\Release\ForvoDownloader.exe.manifest
+C:\Users\rodolfo\documents\visual studio 2013\Projects\ForvoDownloader\ForvoDownloader\obj\Release\ForvoDownloader.application
+C:\Users\rodolfo\documents\visual studio 2013\Projects\ForvoDownloader\ForvoDownloader\obj\Release\ForvoDownloader.exe
+C:\Users\rodolfo\documents\visual studio 2013\Projects\ForvoDownloader\ForvoDownloader\obj\Release\ForvoDownloader.pdb
